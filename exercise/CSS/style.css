@@ -1,32 +1,37 @@
-span {
-	color: red;
-}
-
-#mitte {
-	color: red;
-}
-
-.green {
-	background-color: rgba(50%,10%,10%,1);
-}
-
-.odd {
-	text-decoration: underline;
-}
-
-.even {
-	text-decoration: overline;
-}
-
 body {
-	background: black;
-	color: white;
+	font-family: serif;
 }
 
-#x {
-	background-color: rgba(255,255,255,0.3);
+#span1 {
+	font-weight: 100;
 }
 
-#image {
-	background: #000000 url(../Pics/Skye.jpg) no-repeat fixed center top;
+#span2 {
+	font-weight: 200;
+	font-variant: small-caps;
+}
+
+#span3 {
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
+#span4 {
+	font-weight: 400;
+}
+
+#span5 {
+	font-weight: 500;
+}
+
+#span6 {
+	font-weight: 600;
+}
+
+#span7 {
+	font-weight: 700;
+}
+
+p {
+	font-family: 
 }
