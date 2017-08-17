@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Kapitel 5</title>
+	<style type="text/css">
+		ol {
+		}
+
+		#planeten {
+			list-style-type: circle;
+		}
+
+		#tab {
+			list-style-image: none;
+			list-style-type: circle;
+		}
+
+		.right {
+			text-align: right;
+		}
+
+		thead {
+		font-weight: bold;
+		}
+
+		thead tr {
+			border-bottom: 1px solid black;
+		}
+
+		td {
+			border: 1px solid black;
+		}
+
+		table {
+			border-collapse: collapse;
+		}
+
+		tr:nth-child(even) {
+			background-color: gray;
+		}
+	</style>
+</head>
+<body>
+	<h1>Die acht Planeten und Pluto</h1>
+	<ol id="planeten" type="upper-roman">
+		<li>Merkur</li>
+		<li>Venus</li>
+		<li>Erde</li>
+		<li>Mars</li>
+		<li>Jupiter</li>
+		<li>Saturn</li>
+		<li>Uranus</li>
+		<li>Neptun</li>
+	</ol>
+	<p>Und natürlich noch ...</p>
+	<ol type="upper-roman" start="9">
+		<li>Pluto</li>
+	</ol>
+	<p>Es folgen wichtige Informationen:</p>
+	<dl>
+		<dt><dfn>Merkur</dfn></dt>
+		<dd>Auf dem Merkur ist es sehr heiß! Vorsicht!</dd>
+		<dt><dfn>Venus</dfn></dt>
+		<dd>Auch hier gilt: Vorsicht, heiß!</dd>
+		<dt><dfn>Erde</dfn></dt>
+		<dd>Hier ist es wunderschön <img src="../Pics/smile.gif"></dd>
+	</dl>
+
+	<ol>
+		<li>Item 1 
+				<ol type="lower-alpha">
+					<li>Item 1.1</li>
+					<li>Item 1.2
+						<ul id="tab">
+							<li>Item 1.2.1</li>
+						</ul>
+					</li>
+				</ol>
+		</li>
+		<li>Item 2</li>
+	</ol>
+
+	<table>
+		<caption>Schrödingers CD-Sammlung</caption>
+		<colgroup>
+			<col/>
+			<col/>
+			<col/>
+			<col/>
+			<col/>
+		</colgroup>
+		<thead>
+			<tr>
+				<th scope="col">Album</th>
+				<th scope="col">Künstler</th>
+				<th scope="col">Erscheinungsjahr</th>
+				<th scope="col">Titel</th>
+				<th scope="col">Wertung</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr> 
+				<td>Queen</td> 				
+				<td rowspan="5">Queen</td> 	
+				<td>1973</td> 	
+				<td>10</td> 
+				<td class="right">8</td> 
+			</tr>
+			<tr> 
+				<td>Queen II</td> 			 	
+				<td>1974</td> 	
+				<td>11</td> 
+				<td class="right">8.5</td> 
+			</tr>
+			<tr> 
+				<td>Sheer Heart Attack</td> 		
+				<td>1974</td>	
+				<td>13</td> 
+				<td class="right">7.5</td> 
+			</tr>
+			<tr> 
+				<td>A Night at the Opera</td>	 	
+				<td>1975</td> 	
+				<td>12</td> 
+				<td class="right">10</td> 
+			</tr>
+			<tr> 
+				<td>Jazz</td> 					 	
+				<td>1978</td> 	
+				<td>13</td> 
+				<td class="right">8.5</td> 
+			</tr>
+		</tbody>
+	</table>
+
+
+</body>
+</html>
